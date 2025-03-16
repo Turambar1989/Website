@@ -1,0 +1,114 @@
+body {
+  background-color: #f8f3d9;
+}
+.container {
+  background-color: #ebe5c2;
+  color: #504b38;
+  height: 100%;
+}
+.container h1 {
+  font-size: 5rem;
+  color: #504b38;
+  text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);
+  font-weight: bolder;
+}
+.drum {
+  outline: none;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid #504b38;
+  font-size: 4rem;
+  line-height: 2;
+  font-weight: 900;
+  color: #f8f3d9;
+  text-shadow: 3px 0 #504b38;
+  border-radius: 15px;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px;
+  background-color: #b9b28a;
+}
+.drum:hover {
+  outline: none;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid #b9b28a;
+  font-size: 4rem;
+  line-height: 2;
+  font-weight: 900;
+  color: #504b38;
+  text-shadow: 3px 0 #b9b28a;
+  border-radius: 15px;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px;
+}
+.pressed {
+  box-shadow: 0 3px 4px 0 #504b38;
+  opacity: 0.5;
+}
+.w {
+  background-image: url("images/tom1.png");
+  background-color: white;
+}
+.s {
+  background-image: url("images/tom2.png");
+  background-color: white;
+}
+.a {
+  background-image: url("images/tom3.png");
+}
+.d {
+  background-image: url("images/tom4.png");
+}
+.j {
+  background-image: url("images/crash.png");
+}
+.k {
+  background-image: url("images/kick.png");
+}
+.l {
+  background-image: url("images/snare.png");
+}
+.bottom-container {
+  background-color: #2c3930;
+  color: #dcd7c9;
+  width: 100%;
+  height: 120px;
+}
+.footer-link {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #a27b5c;
+  border: 2px solid;
+  border-radius: 15px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.footer-link:hover {
+  background-color: #dcd7c9;
+  color: #2c3930;
+  border: 2px solid;
+  border-radius: 15px;
+}
+@media (min-width: 1000px) {
+  html {
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 160px;
+  }
+  body {
+    background-color: #f8f3d9;
+    margin-bottom: 160px;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 160px;
+  }
+}
