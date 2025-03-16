@@ -1,0 +1,63 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  margin: 5rem 5rem 0rem 5rem;
+  background-color: rgb(205, 215, 212);
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+}
+.main_container {
+  flex: 1;
+}
+#logo {
+  height: 200px;
+  margin: auto;
+  display: block;
+}
+.red {
+  color: darkgreen;
+}
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+footer {
+  text-align: right;
+  color: midnightblue;
+}
+.card {
+  width: 48%;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.images {
+  float: left;
+  height: 200px;
+  margin-right: 25px;
+}
+
+@media (max-width: 600px) {
+  #logo {
+    width: 100px;
+    height: auto;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .card {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  .card .images {
+    margin-bottom: 10px;
+    width: 100%;
+    display: inline;
+    object-fit: cover;
+  }
+}

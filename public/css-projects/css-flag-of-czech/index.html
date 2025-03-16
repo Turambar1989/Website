@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Czech Republic Flag</title>
+    <style>
+      #czech-flag {
+        width: 900px;
+        height: 600px;
+        position: relative;
+        border: 1px solid #000; /* Optional border for visibility */
+      }
+
+      #white-red {
+        height: 100%;
+        background: linear-gradient(to bottom, white 50%, red 50%);
+      }
+
+      #czech-flag > #blue-triangle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-top: 300px solid transparent;
+        border-left: 350px solid blue;
+        border-bottom: 300px solid transparent;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="czech-flag">
+      <div id="blue-triangle"></div>
+      <div id="white-red"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+#yellow {
+  background-color: yellow;
+  height: 600px;
+  width: 900px;
+  position: relative;
+}
+#yellow > #first {
+  position: absolute;
+  background-color: blue;
+  width: 35%;
+  height: 40%;
+}
+#yellow > #second {
+  position: absolute;
+  left: 50%;
+  background-color: blue;
+  width: 50%;
+  height: 40%;
+}
+#yellow > #third {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  background-color: blue;
+  width: 50%;
+  height: 40%;
+}
+#yellow > #fourth {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  background-color: blue;
+  width: 35%;
+  height: 40%;
+}

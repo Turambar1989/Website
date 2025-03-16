@@ -1,0 +1,18 @@
+body {
+  background-color: black;
+}
+h1 {
+  text-transform: uppercase;
+  font-family: "Libre Baskerville", serif;
+  font-size: 3rem;
+}
+.mem-image {
+  border: 2px solid white;
+}
+.mem-poster {
+  margin-top: 100px;
+  width: 50%;
+  margin-left: 25%;
+  text-align: center;
+  color: white;
+}

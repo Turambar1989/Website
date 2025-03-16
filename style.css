@@ -1,0 +1,99 @@
+.navbar {
+  background-color: #2c3930;
+}
+.navbar-brand {
+  color: #dcd7c9;
+}
+.nav-link {
+  color: #dcd7c9;
+}
+.my-resume-link:hover {
+  background-color: #dcd7c9;
+  color: #2c3930;
+}
+.dropdown-menu {
+  background-color: #2c3930;
+  border: 2px solid #dcd7c9;
+}
+.dropdown-menu .dropdown-item {
+  color: #dcd7c9;
+  background-color: #2c3930;
+}
+.dropdown-menu .dropdown-item:hover {
+  color: #2c3930;
+  background-color: #dcd7c9;
+}
+header {
+  background-color: #dcd7c9;
+}
+.title-text {
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #2c3930;
+}
+#header-span {
+  text-transform: uppercase;
+  text-decoration-line: underline;
+  color: #a27b5c;
+}
+#header-span:hover {
+  text-transform: uppercase;
+  text-decoration-line: underline;
+  color: #dcd7c9;
+  background-color: #2c3930;
+}
+.second-middle-container {
+  margin: 0;
+  padding: 0;
+  color: #2c3930;
+  background-color: #dcd7c9;
+}
+.card {
+  padding: 5px;
+  background-color: #a27b5c;
+}
+.card h2 {
+  padding: 5px;
+  background-color: #a27b5c;
+  color: #dcd7c9;
+  text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);
+}
+.card p {
+  padding: 5px;
+  background-color: #a27b5c;
+  color: white;
+}
+.contact-me {
+  background-color: #dcd7c9;
+}
+.btn {
+  font-weight: bolder;
+  border: 2px solid #2c3930;
+  background-color: #2c3930;
+  color: #dcd7c9;
+}
+.btn:hover {
+  border: 2px solid #2c3930;
+  background-color: #dcd7c9;
+  color: #2c3930;
+}
+.bottom-container {
+  background-color: #2c3930;
+  color: #dcd7c9;
+}
+.footer-link {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #a27b5c;
+  border: 2px solid;
+  border-radius: 15px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.footer-link:hover {
+  background-color: #dcd7c9;
+  color: #2c3930;
+  border: 2px solid;
+  border-radius: 15px;
+}
