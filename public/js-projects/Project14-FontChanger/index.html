@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FontChanger</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container text-center py-2">
+      <h1>Font Changer</h1>
+    </div>
+    <div class="container text-center py-2 mb-2">
+      <div class="slidecontainer">
+        <input
+          type="range"
+          min="1"
+          max="50"
+          value="25"
+          class="slider rangeInput"
+          id="myRange"
+        />
+      </div>
+    </div>
+    <div class="container text-center mb-2">
+      <select class="fontSelector text-center">
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="Arial">Arial</option>
+        <option value="Courier New">Courier New</option>
+        <option value="Cambria">Cambria</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Roboto">Roboto</option>
+        <option value="MonsieurLaDoulaise">MonsieurLaDoulaise</option>
+      </select>
+    </div>
+    <div class="container text-center mb-2">
+      <p class="sampleText">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab omnis fugit
+        a saepe ipsa sapiente facilis voluptatem eligendi! Voluptatem quisquam
+        aspernatur at laboriosam non, aliquid optio cum beatae provident a?
+      </p>
+    </div>
+    <footer>
+      <div class="bottom-container text-center px-2 py-3">
+        <a class="footer-link" href="https://github.com/Turambar1989/"
+          >GitHub</a
+        >
+        <a class="footer-link" href="../../../../index.html">Home</a>
+        <p class="copyright py-2">©2025 Dan Jelczu @Copyrights reserved.</p>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
