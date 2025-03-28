@@ -1,0 +1,128 @@
+:root {
+  --brightness: 100%;
+  --contrast: 100%;
+  --saturation: 100%;
+  --hue: 0deg;
+  --blur: 0px;
+}
+html {
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 160px;
+}
+body {
+  background-color: #dcd7c9;
+  margin-bottom: 160px;
+  color: #2c3930;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 160px;
+}
+.bottom-container {
+  background-color: #2c3930;
+  color: #dcd7c9;
+}
+.footer-link {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #a27b5c;
+  border: 2px solid;
+  border-radius: 15px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.footer-link:hover {
+  background-color: #dcd7c9;
+  color: #2c3930;
+  border: 2px solid;
+  border-radius: 15px;
+}
+button {
+  padding: 5px;
+  border: 3px solid #a27b5c;
+  border-radius: 15px;
+  font-weight: bolder;
+  color: #dcd7c9;
+  background-color: #2c3930;
+  margin-bottom: 15px;
+}
+button:hover {
+  cursor: pointer;
+  color: #2c3930;
+  background-color: #dcd7c9;
+  border: 3px solid #a27b5c;
+}
+h1 {
+  color: #2c3930;
+}
+label {
+  font-weight: bolder;
+  width: 100%;
+}
+.bar {
+  width: 100%;
+}
+.goUpBtn {
+  display: none;
+  position: fixed;
+  bottom: 10%;
+  right: 0%;
+  z-index: 1;
+}
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  border: 2px solid #2c3930;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #2c3930;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #2c3930;
+  cursor: pointer;
+}
+.slider:hover {
+  opacity: 1;
+}
+.image {
+  filter: brightness(var(--brightness)) contrast(var(--contrast))
+    saturate(var(--saturation)) hue-rotate(var(--hue)) blur(var(--blur));
+}
+.teleportSection {
+  height: 70vh;
+  background-color: #b897ad;
+  border-radius: 5%;
+  border: 3px solid #41242a;
+}
+h6 {
+  color: #1b191e;
+  padding: 5px;
+}
+.teleportSection p {
+  color: #6d4457;
+}
+.active {
+  display: block;
+}
