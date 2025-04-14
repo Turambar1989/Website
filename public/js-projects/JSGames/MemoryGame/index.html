@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MemoryGame</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" async></script>
+  </head>
+  <body>
+    <div class="title"><h1>MemoryGame</h1></div>
+    <div class="title2">
+      <div>Designer: <a href="https://iconarchive.com">Icon Archive</a></div>
+      <div>
+        License: Free with a link back to
+        <a href="https://iconarchive.com">https://iconarchive.com</a>
+      </div>
+    </div>
+    <div class="overlayText visible">Click To Start!!</div>
+    <div class="overlayText gameOverText" id="gameOverText">
+      Game Over <span class="restart">Click To Restart</span>
+    </div>
+    <div class="overlayText victoryText">
+      Victory <span class="restart">Click To Restart</span>
+    </div>
+    <div class="gameContainer">
+      <div class="gameInfoContainer">
+        <div class="gameInfo">
+          <h4>Time: <span id="time">100</span></h4>
+        </div>
+        <div class="gameInfo">
+          <h4>Clicks: <span id="clicks">0</span></h4>
+        </div>
+      </div>
+      <div class="card">
+        <div class="cardBack cardFace">
+          <img
+            class="images"
+            src="./images/Iconarchive-Childrens-Book-Animals-Garden-Tree.128.png"
+            alt="tree-image"
+            title="tree card"
+          />
+        </div>
+        <div class="cardFront cardFace">
+          <img
+            class="images card-value"
+            src="./images/Iconarchive-Childrens-Book-Animals-Badger.128.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="card">
+        <div class="cardBack cardFace">
+          <img
+            class="images"
+            src="./images/Iconarchive-Childrens-Book-Animals-Garden-Tree.128.png"
+            alt="tree-image"
+            title="tree card"
+          />
+        </div>
+        <div class="cardFront cardFace">
+          <img
+            class="images card-value"
+            src="./images/Iconarchive-Childrens-Book-Animals-Badger.128.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="card">
+        <div class="cardBack cardFace">
+          <img
+            class="images"
+            src="./images/Iconarchive-Childrens-Book-Animals-Garden-Tree.128.png"
+            alt="tree-image"
+            title="tree card"
+          />
+        </div>
+        <div class="cardFront cardFace">
+          <img
+            class="images card-value"
+            src="./images/Iconarchive-Childrens-Book-Animals-Chameleon-Green.128.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="card">
+        <div class="cardBack cardFace">
+          <img
+            class="images"
+            src="./images/Iconarchive-Childrens-Book-Animals-Garden-Tree.128.png"
+            alt="tree-image"
+            title="tree card"
+          />
+        </div>
+        <div class="cardFront cardFace">
+          <img
+            class="images card-value"
+            src="./images/Iconarchive-Childrens-Book-Animals-Chameleon-Green.128.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="card">
+        <div class="cardBack cardFace">
+          <img
+            class="images"
+            src="./images/Iconarchive-Childrens-Book-Animals-Garden-Tree.128.png"
+            alt="tree-image"
+            title="tree card"
+          />
+        </div>
+        <div class="cardFront cardFace">
+          <img
+            class="images card-value"
+            src="./images/Iconarchive-Childrens-Book-Animals-Fox.128.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="card">
+        <div class="cardBack cardFace">
+          <img
+            class="images"
+            src="./images/Iconarchive-Childrens-Book-Animals-Garden-Tree.128.png"
+            alt="tree-image"
+            title="tree card"
+          />
+        </div>
+        <div class="cardFront cardFace">
+          <img
+            class="images card-value"
+            src="./images/Iconarchive-Childrens-Book-Animals-Fox.128.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="card">
+        <div class="cardBack cardFace">
+          <img
+            class="images"
+            src="./images/Iconarchive-Childrens-Book-Animals-Garden-Tree.128.png"
+            alt="tree-image"
+            title="tree card"
+          />
+        </div>
+        <div class="cardFront cardFace">
+          <img
+            class="images card-value"
+            src="./images/Iconarchive-Childrens-Book-Animals-Grizzly-Bear.128.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="card">
+        <div class="cardBack cardFace">
+          <img
+            class="images"
+            src="./images/Iconarchive-Childrens-Book-Animals-Garden-Tree.128.png"
+            alt="tree-image"
+            title="tree card"
+          />
+        </div>
+        <div class="cardFront cardFace">
+          <img
+            class="images card-value"
+            src="./images/Iconarchive-Childrens-Book-Animals-Grizzly-Bear.128.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="card">
+        <div class="cardBack cardFace">
+          <img
+            class="images"
+            src="./images/Iconarchive-Childrens-Book-Animals-Garden-Tree.128.png"
+            alt="tree-image"
+            title="tree card"
+          />
+        </div>
+        <div class="cardFront cardFace">
+          <img
+            class="images card-value"
+            src="./images/Iconarchive-Childrens-Book-Animals-Hedgehog.128.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="card">
+        <div class="cardBack cardFace">
+          <img
+            class="images"
+            src="./images/Iconarchive-Childrens-Book-Animals-Garden-Tree.128.png"
+            alt="tree-image"
+            title="tree card"
+          />
+        </div>
+        <div class="cardFront cardFace">
+          <img
+            class="images card-value"
+            src="./images/Iconarchive-Childrens-Book-Animals-Hedgehog.128.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="card">
+        <div class="cardBack cardFace">
+          <img
+            class="images"
+            src="./images/Iconarchive-Childrens-Book-Animals-Garden-Tree.128.png"
+            alt="tree-image"
+            title="tree card"
+          />
+        </div>
+        <div class="cardFront cardFace">
+          <img
+            class="images card-value"
+            src="./images/Iconarchive-Childrens-Book-Animals-Moose.128.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="card">
+        <div class="cardBack cardFace">
+          <img
+            class="images"
+            src="./images/Iconarchive-Childrens-Book-Animals-Garden-Tree.128.png"
+            alt="tree-image"
+            title="tree card"
+          />
+        </div>
+        <div class="cardFront cardFace">
+          <img
+            class="images card-value"
+            src="./images/Iconarchive-Childrens-Book-Animals-Moose.128.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="card">
+        <div class="cardBack cardFace">
+          <img
+            class="images"
+            src="./images/Iconarchive-Childrens-Book-Animals-Garden-Tree.128.png"
+            alt="tree-image"
+            title="tree card"
+          />
+        </div>
+        <div class="cardFront cardFace">
+          <img
+            class="images card-value"
+            src="./images/Iconarchive-Childrens-Book-Animals-Owl.128.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="card">
+        <div class="cardBack cardFace">
+          <img
+            class="images"
+            src="./images/Iconarchive-Childrens-Book-Animals-Garden-Tree.128.png"
+            alt="tree-image"
+            title="tree card"
+          />
+        </div>
+        <div class="cardFront cardFace">
+          <img
+            class="images card-value"
+            src="./images/Iconarchive-Childrens-Book-Animals-Owl.128.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="card">
+        <div class="cardBack cardFace">
+          <img
+            class="images"
+            src="./images/Iconarchive-Childrens-Book-Animals-Garden-Tree.128.png"
+            alt="tree-image"
+            title="tree card"
+          />
+        </div>
+        <div class="cardFront cardFace">
+          <img
+            class="images card-value"
+            src="./images/Iconarchive-Childrens-Book-Animals-Racoon.128.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="card">
+        <div class="cardBack cardFace">
+          <img
+            class="images"
+            src="./images/Iconarchive-Childrens-Book-Animals-Garden-Tree.128.png"
+            alt="tree-image"
+            title="tree card"
+          />
+        </div>
+        <div class="cardFront cardFace">
+          <img
+            class="images card-value"
+            src="./images/Iconarchive-Childrens-Book-Animals-Racoon.128.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="bottom-container">
+        <a class="footer-link" href="https://github.com/Turambar1989/"
+          >GitHub</a
+        >
+        <a class="footer-link" href="../../../../index.html">Home</a>
+        <p class="copyright">©2025 Dan Jelczu @Copyrights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
