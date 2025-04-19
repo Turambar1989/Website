@@ -63,28 +63,28 @@ function winnerCheck() {
     document.querySelector(".turn").textContent = "Player1 Wins";
     document.querySelector(".turn").style.color = "green";
   } else if (includesAll(game.player2, winArray0)) {
-    document.querySelector(".turn").textContent = "Player2 Wins";
+    document.querySelector(".turn").textContent = "Computer Wins";
     document.querySelector(".turn").style.color = "red";
   } else if (includesAll(game.player2, winArray1)) {
-    document.querySelector(".turn").textContent = "Player2 Wins";
+    document.querySelector(".turn").textContent = "Computer Wins";
     document.querySelector(".turn").style.color = "red";
   } else if (includesAll(game.player2, winArray2)) {
-    document.querySelector(".turn").textContent = "Player2 Wins";
+    document.querySelector(".turn").textContent = "Computer Wins";
     document.querySelector(".turn").style.color = "red";
   } else if (includesAll(game.player2, winArray3)) {
-    document.querySelector(".turn").textContent = "Player2 Wins";
+    document.querySelector(".turn").textContent = "Computer Wins";
     document.querySelector(".turn").style.color = "red";
   } else if (includesAll(game.player2, winArray4)) {
-    document.querySelector(".turn").textContent = "Player2 Wins";
+    document.querySelector(".turn").textContent = "Computer Wins";
     document.querySelector(".turn").style.color = "red";
   } else if (includesAll(game.player2, winArray5)) {
-    document.querySelector(".turn").textContent = "Player2 Wins";
+    document.querySelector(".turn").textContent = "Computer Wins";
     document.querySelector(".turn").style.color = "red";
   } else if (includesAll(game.player2, winArray6)) {
-    document.querySelector(".turn").textContent = "Player2 Wins";
+    document.querySelector(".turn").textContent = "Computer Wins";
     document.querySelector(".turn").style.color = "red";
   } else if (includesAll(game.player2, winArray7)) {
-    document.querySelector(".turn").textContent = "Player2 Wins";
+    document.querySelector(".turn").textContent = "Computer Wins";
     document.querySelector(".turn").style.color = "red";
   } else if (game.player1.length === 5) {
     document.querySelector(".turn").textContent = "DRAW!";
@@ -97,7 +97,7 @@ function winnerCheck() {
 // const endGame = function () {
 //   if (
 //     document.querySelector(".turn").textContent == "DRAW!" ||
-//     document.querySelector(".turn").textContent == "Player2 Wins" ||
+//     document.querySelector(".turn").textContent == "Computer Wins" ||
 //     document.querySelector(".turn").textContent == "Player1 Wins"
 //   ) {
 //     alert("Game Over!!");
@@ -140,7 +140,7 @@ const computerChoice = function () {
 const chosingDiv = function (e) {
   if (
     document.querySelector(".turn").textContent == "DRAW!" ||
-    document.querySelector(".turn").textContent == "Player2 Wins" ||
+    document.querySelector(".turn").textContent == "Computer Wins" ||
     document.querySelector(".turn").textContent == "Player1 Wins"
   ) {
     alert("Game Over!!");
@@ -157,7 +157,7 @@ const chosingDiv = function (e) {
   let choiceHuman = this.dataset.option;
   game.player1.push(this.dataset.option);
   computer = computer.filter((x) => x !== choiceHuman);
-  document.querySelector(".turn").textContent = "Player2 turn";
+  document.querySelector(".turn").textContent = "Computer turn";
   console.log(game.player1);
   console.log(game.player2);
   console.log(computer);
